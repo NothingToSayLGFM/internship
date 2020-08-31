@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  background-image: url("~@/assets/1000s_d_850.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  transition: 0.4s;
+}
+#app.warm {
+  background-image: url("~@/assets/sun.jpg");
+}
+.app-title {
+  color: #fff;
+  margin-bottom: 30px;
+}
+main {
+  min-height: 100vh;
+  padding: 25px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.75)
+  );
+}

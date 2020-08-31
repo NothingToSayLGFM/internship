@@ -1,0 +1,142 @@
+.testimonials {
+  margin-top: 91px;
+
+  .slick-slider {
+    @media (max-width: 991px) {
+      height: unset;
+    }
+  }
+  .slick-list {
+    height: 400px;
+    .slick-slide {
+      border-radius: 5px;
+    }
+    @media (max-width: 991px) {
+      height: unset;
+    }
+  }
+  .slick-slider .slick-track {
+    padding-bottom: 59px;
+    position: absolute;
+    left: 25%;
+    @media (max-width: 991px) {
+      position: unset;
+      left: unset;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    &--title {
+      font-family: $proxima-font-black;
+      background: linear-gradient(195.62deg, #ffc000 1.55%, #ff8a00 95.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 158.34%;
+      margin-bottom: 22px;
+    }
+    &--subtitle {
+      font-family: $proxima-font-regular;
+      color: #5c5c5c;
+      max-width: 592px;
+      line-height: 175.78%;
+      margin: 0 auto;
+      font-size: 0.875rem;
+    }
+  }
+  .slide {
+    max-width: 373px;
+    padding-top: 40px;
+    padding-left: 39px;
+    padding-right: 21px;
+    padding-bottom: 36px;
+    @media screen and (max-width: 700px) {
+      max-width: 100%;
+    }
+    .slide--quotes {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: -18px;
+    }
+    &--text {
+      font-size: 0.875rem;
+      font-family: $proxima-font-regular;
+      color: #5c5c5c;
+      line-height: 175.78%;
+      margin-top: 40px;
+      margin-bottom: 44px;
+    }
+    &--author {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .author-image {
+        img {
+          width: 58px;
+          height: 56px;
+          border-radius: 50%;
+        }
+      }
+      .author-bio {
+        margin-left: 11px;
+        .author-name {
+          font-family: $proxima-font-black;
+          line-height: 105.47%;
+          color: #5c5c5c;
+          font-size: 1rem;
+          margin-bottom: 3px;
+        }
+        .author-category {
+          font-family: $proxima-font-regular;
+          line-height: 105.47%;
+          color: #5c5c5c;
+          font-size: 0.75rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .slick-slide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.testimonials-container {
+  margin-bottom: 72px;
+}
+
+.testimonials__slider--arrows {
+  text-align: center;
+  margin-top: 27px;
+}
+
+.slider-arrow {
+  width: 80px;
+  height: 7px;
+  border-radius: 7px;
+  border: none;
+  &:hover {
+    background-color: #ffc000;
+  }
+}
+
+.testimonials .slick-slide {
+  position: relative;
+  border: 1px solid #efefef;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  }
+}
+
+.testimonials .slick-current {
+  opacity: 1;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+}

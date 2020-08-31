@@ -1,0 +1,72 @@
+.country-list-wrap {
+  .no-records-title {
+    color: #fff;
+  }
+  .country-list {
+    padding: 0;
+    li {
+      position: relative;
+      margin: 0 auto;
+      color: #000;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      text-align: left;
+      padding: 15px;
+      list-style: none;
+      background-color: rgba(255, 255, 255, 0.25);
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+      .info {
+        width: 100%;
+        p.list-country {
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+        .list-data {
+          margin-bottom: 30px;
+          text-align: center;
+          span {
+            display: block;
+            margin-top: 10px;
+          }
+        }
+      }
+      a {
+        position: absolute;
+        right: -5%;
+        top: -8%;
+        background: #e8e2e2;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .country-list-wrap {
+    .country-list {
+      li {
+        a {
+          top: -3%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .country-list-wrap {
+    .country-list {
+      li {
+        a {
+          right: 15px;
+          top: 15px;
+        }
+      }
+    }
+  }
+}

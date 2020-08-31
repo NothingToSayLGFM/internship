@@ -1,0 +1,134 @@
+.portfolio {
+  position: relative;
+  overflow: hidden;
+  background: #fff7df;
+  padding-top: 124px;
+  &__icon {
+    margin-top: 20px;
+    text-align: center;
+    &--title {
+      font-family: $proxima-font-black;
+      font-size: 1.25rem;
+      margin-top: 20px;
+      margin-bottom: 0;
+      line-height: 182.7%;
+      color: #5c5c5c;
+    }
+    &--text {
+      font-family: $proxima-font-regular;
+      font-size: 0.875rem;
+      color: #5c5c5c;
+      line-height: 17px;
+      max-width: 253px;
+      margin: 0 auto;
+    }
+  }
+  &__image {
+    position: absolute;
+    bottom: -17%;
+    max-width: 53%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .portfolio-real-image {
+    position: absolute;
+    bottom: -15%;
+    max-width: 53%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    &--title {
+      line-height: 158.34%;
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+      font-family: $proxima-font-regular;
+      background: linear-gradient(231.52deg, #ffc000 1.55%, #ff8a00 95.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      span {
+        font-family: $proxima-font-black;
+      }
+    }
+    &--text {
+      color: #5c5c5c;
+      line-height: 175.78%;
+      font-family: $proxima-font-regular;
+      font-size: 0.875rem;
+      max-width: 387px;
+    }
+    &--button {
+      margin-top: 30px;
+    }
+  }
+}
+
+.wrap {
+  margin-top: 239px;
+  padding-bottom: 119px;
+}
+
+@media screen and (max-width: 1400px) {
+  .portfolio__image {
+    bottom: -12%;
+  }
+  .portfolio .portfolio-real-image {
+    bottom: -11%;
+    img {
+      max-width: 98%;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .portfolio__image,
+  .portfolio-real-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .portfolio__image {
+    bottom: -3%;
+  }
+  .portfolio .portfolio-real-image {
+    bottom: -2%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio__image {
+    display: none;
+  }
+  .portfolio__text {
+    justify-content: center;
+  }
+
+  .portfolio__text {
+    padding-right: 0;
+    &--title {
+      text-align: center;
+    }
+    &--text {
+      text-align: center;
+    }
+    &--button {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+  .wrap {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+}

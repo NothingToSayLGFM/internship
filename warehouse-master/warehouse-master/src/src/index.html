@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <title>Warehouse</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav class="navbar o-grid o-grid--no-gutter">
+          <div class="navbar__brand o-grid__cell--width-auto">
+            <a href="#">
+              <div>
+                <img src="/assets/img/Logo.png" alt="logo" />
+              </div>
+            </a>
+          </div>
+          <div class="navbar__menu o-grid__cell" id="menu">
+            <div class="navbar__menu--item active">
+              <a href="#about">About</a>
+            </div>
+            <div class="navbar__menu--item"><a href="#help">Help</a></div>
+            <div class="navbar__menu--item">
+              <a href="#features">Features</a>
+            </div>
+            <div class="navbar__menu--item"><a href="#signup">Signup</a></div>
+          </div>
+          <button class="icon" id="gamburger">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="navbar__button o-grid__cell">
+            <button class="request-demo" type="button">
+              <span>Request demo</span>
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 15L21 8L15 1"
+                  stroke="#9C69E2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 8H1"
+                  stroke="#9C69E2"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div class="responsive-navbar" id="responsivebar">
+          <div class="navbar__menu--item active"><a href="#">About</a></div>
+          <div class="navbar__menu--item"><a href="#">Help</a></div>
+          <div class="navbar__menu--item"><a href="#">Features</a></div>
+          <div class="navbar__menu--item"><a href="#">Signup</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container hero-wrapper">
+          <div class="hero__text">
+            <h1 class="hero__text--title">Save your data storage here.</h1>
+            <p class="hero__text--desc">
+              Data Warehouse is a data storage area that has been tested for
+              security, so you can store your data here safely but not be afraid
+              of being stolen by others.
+            </p>
+            <button type="button" class="hero__text--button learn-more">
+              Learn more
+            </button>
+          </div>
+          <div class="hero__image">
+            <div class="image-wrapper">
+              <img src="/assets/img/image1.png" alt="hero-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-container about-wrapper">
+          <div class="about__image">
+            <img src="/assets/img/image2.png" alt="about-image" />
+          </div>
+          <div class="about__text">
+            <div class="about__text--wrapper">
+              <h2 class="about__text--title">
+                We are a high-level data storage bank
+              </h2>
+              <p class="about__text--desc">
+                The place to store various data that you can access at any time
+                through the internet and where you can carry it. This very
+                flexible storage area has a high level of security. To enter
+                into your own data you must enter the password that you created
+                when you registered in this Data Warehouse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="features__text">
+          <h2 class="features__text--title">Features</h2>
+          <p class="features__text--desc">
+            Some of the features and advantages that we provide for those of you
+            who store data in this Data Warehouse.
+          </p>
+        </div>
+        <div class="features-container features__boxes">
+          <div class="features__box">
+            <div class="features__box--image">
+              <img src="/assets/img/image3.png" alt="features-image" />
+            </div>
+            <div class="features__box--text">
+              <h3>Search Data</h3>
+              <p>
+                Don’t worry if your data is very large, the Data Warehoue
+                provides a search engine, which is useful for making it easier
+                to find data effectively saving time.
+              </p>
+              <a href="#"
+                ><span>learn more</span>
+                <svg
+                  width="23"
+                  height="16"
+                  viewBox="0 0 23 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.2852 15.001L21.2852 8.00098L15.2852 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.2852 8.00098H1.28516"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="features__box">
+            <div class="features__box--image">
+              <img src="/assets/img/image4.png" alt="features-image" />
+            </div>
+            <div class="features__box--text">
+              <h3>24 Hours Access</h3>
+              <p>
+                Access is given 24 hours a full morning to night and meet again
+                in the morning, giving you comfort when you need data when
+                urgent.
+              </p>
+              <a href="#"
+                ><span>learn more</span>
+                <svg
+                  width="23"
+                  height="16"
+                  viewBox="0 0 23 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.2852 15.001L21.2852 8.00098L15.2852 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.2852 8.00098H1.28516"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="features__box">
+            <div class="features__box--image">
+              <img src="/assets/img/image5.png" alt="features-image" />
+            </div>
+            <div class="features__box--text">
+              <h3>Print Out</h3>
+              <p>
+                Print out service gives you convenience if someday you need
+                print data, just edit it all and just print it.
+              </p>
+              <a href="#"
+                ><span>learn more</span>
+                <svg
+                  width="23"
+                  height="16"
+                  viewBox="0 0 23 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.2852 15.001L21.2852 8.00098L15.2852 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.2852 8.00098H1.28516"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="features__box">
+            <div class="features__box--image">
+              <img src="/assets/img/image6.png" alt="features-image" />
+            </div>
+            <div class="features__box--text">
+              <h3>Security Code</h3>
+              <p>
+                Data Security is one of our best facilities. Allows for your
+                files to be safer. The file can be secured with a code or
+                password that you created, so only you can open the file.
+              </p>
+              <a href="#"
+                ><span>learn more</span>
+                <svg
+                  width="23"
+                  height="16"
+                  viewBox="0 0 23 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.2852 15.001L21.2852 8.00098L15.2852 1.00098"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.2852 8.00098H1.28516"
+                    stroke="#9C69E2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" id="help">
+        <div class="testimonials-container testimonials__wrapper">
+          <h2>testimonials</h2>
+          <div class="slider-wrapper">
+            <div class="testimonials__slider">
+              <div class="item">
+                <div class="item__img">
+                  <div class="img">
+                    <img src="/assets/img/Testi.png" alt="slider-image" />
+                  </div>
+                  <div class="item__img--author">
+                    <p class="author-name">John Fang</p>
+                    <p class="author-email"><a href="#">wordfaang.com</a></p>
+                    <p class="author-text">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-overlay"></div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <div class="img">
+                    <img src="/assets/img/Testi.png" alt="slider-image" />
+                  </div>
+                  <div class="item__img--author">
+                    <p class="author-name">John Fang</p>
+                    <p class="author-email"><a href="#">wordfaang.com</a></p>
+                    <p class="author-text">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-overlay"></div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <div class="img">
+                    <img src="/assets/img/Testi.png" alt="slider-image" />
+                  </div>
+                  <div class="item__img--author">
+                    <p class="author-name">John Fang</p>
+                    <p class="author-email"><a href="#">wordfaang.com</a></p>
+                    <p class="author-text">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-overlay"></div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <div class="img">
+                    <img src="/assets/img/Testi.png" alt="slider-image" />
+                  </div>
+                  <div class="item__img--author">
+                    <p class="author-name">John Fang</p>
+                    <p class="author-email"><a href="#">wordfaang.com</a></p>
+                    <p class="author-text">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-overlay"></div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <div class="img">
+                    <img src="/assets/img/Testi.png" alt="slider-image" />
+                  </div>
+                  <div class="item__img--author">
+                    <p class="author-name">John Fang</p>
+                    <p class="author-email"><a href="#">wordfaang.com</a></p>
+                    <p class="author-text">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-overlay"></div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <div class="img">
+                    <img src="/assets/img/Testi.png" alt="slider-image" />
+                  </div>
+                  <div class="item__img--author">
+                    <p class="author-name">John Fang</p>
+                    <p class="author-email"><a href="#">wordfaang.com</a></p>
+                    <p class="author-text">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-arrows">
+            <ul>
+              <li class="prev">
+                <svg
+                  width="42"
+                  height="16"
+                  viewBox="0 0 42 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 8L7 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M0.999998 8L41 8"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+              <li class="next">
+                <svg
+                  width="22"
+                  height="16"
+                  viewBox="0 0 22 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M15 15L21 8L15 1"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 8H1"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer id="signup">
+        <div class="footer-container">
+          <div class="footer__header">
+            <div class="footer__header--title">
+              <h2>Try for free!</h2>
+              <p>Get limited 1 week free try our features!</p>
+            </div>
+            <div class="footer__header--buttons">
+              <div>
+                <button class="learn-more">learn more</button>
+              </div>
+              <div>
+                <button class="request-demo" type="button">
+                  <span>Request demo</span>
+                  <svg
+                    width="22"
+                    height="16"
+                    viewBox="0 0 22 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 15L21 8L15 1"
+                      stroke="#9C69E2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 8H1"
+                      stroke="#9C69E2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__content">
+            <div class="footer__content--wrapper">
+              <div class="footer__content--logo">
+                <div class="footer-logo">
+                  <img src="/assets/img/footer-logo.png" alt="footer-logo" />
+                </div>
+                <p>DataWarehouse</p>
+              </div>
+              <div class="footer__content--contacts">
+                <div class="address">
+                  <address>
+                    <div class="location">
+                      <span class="loc">Warehouse Society, 234</span>
+                      <span class="loc">Bahagia Ave Street PRBW 29281</span>
+                    </div>
+                    <div class="contacts">
+                      <span>
+                        <a href="mailto:info@warehouse.project"
+                          >info@warehouse.project</a
+                        >
+                      </span>
+                      <span>
+                        <a href="tel:+12323434">1-232-3434 (Main)</a></span
+                      >
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__menu--wrapper">
+              <div class="about-menu">
+                <ul class="about-list">
+                  <li class="about-list-item"><a href="#">About</a></li>
+                  <li class="about-list-item"><a href="#">Profile</a></li>
+                  <li class="about-list-item"><a href="#">Features</a></li>
+                  <li class="about-list-item"><a href="#">Careers</a></li>
+                  <li class="about-list-item"><a href="#">DW News</a></li>
+                </ul>
+              </div>
+              <div class="help-menu">
+                <ul class="help-list">
+                  <li class="help-list-item"><a href="#">Help</a></li>
+                  <li class="help-list-item"><a href="#">Support</a></li>
+                  <li class="help-list-item"><a href="#">Sing up</a></li>
+                  <li class="help-list-item"><a href="#">Guide</a></li>
+                  <li class="help-list-item"><a href="#">Reports</a></li>
+                  <li class="help-list-item"><a href="#">Q&A</a></li>
+                </ul>
+              </div>
+              <div class="social-menu">
+                <div>
+                  <p class="social-list-title">Social Media</p>
+                  <ul class="social-list">
+                    <li class="social-list-item">
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li class="social-list-item">
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li class="social-list-item">
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright--text">
+              <p>&copy; Datawarehouse™, 2020. All rights reserved.</p>
+              <p>Company Registration Number: 21479524.</p>
+            </div>
+            <div class="footer__copyright--chat">
+              <button type="button" class="footer-chat-icon">
+                <svg
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10C0 4.47715 4.47715 0 10 0H20C25.5228 0 30 4.47715 30 10V14C30 19.5228 25.5228 24 20 24H0V10Z"
+                    fill="#9C69E2"
+                  />
+                  <circle cx="9" cy="12" r="2" fill="white" />
+                  <circle cx="15" cy="12" r="2" fill="white" />
+                  <circle cx="21" cy="12" r="2" fill="white" />
+                  <path
+                    d="M10 23H0V25.4676C0 27.0222 1.69594 27.9824 3.02899 27.1826L10 23Z"
+                    fill="#9C69E2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>

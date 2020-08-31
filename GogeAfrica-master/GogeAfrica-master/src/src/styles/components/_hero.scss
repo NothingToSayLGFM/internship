@@ -1,0 +1,179 @@
+.hero {
+  background: $orange-gradient-rigth-to-left;
+  position: relative;
+
+  &-wrapper {
+    position: relative;
+  }
+
+  .slider-landing-man-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+
+    @media (max-width: 1200px) {
+      right: 0;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    @media (max-width: 991px) {
+      position: unset;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  .course-girl-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media (max-width: 1200px) {
+      right: 0;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    @media (max-width: 991px) {
+      position: unset;
+      text-align: center;
+    }
+  }
+
+  &__hero-course {
+    padding-top: 101px;
+    padding-bottom: 106px;
+    @media (max-width: 991px) {
+      padding-bottom: 0;
+    }
+    &--title {
+      font-family: $proxima-font-black;
+      font-size: 2.75rem;
+      max-width: 534px;
+      line-height: 158.34%;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    &--subtitle {
+      font-family: $proxima-font-regular;
+      font-size: 1.125rem;
+      color: #fff;
+      line-height: 33px;
+      max-width: 444px;
+      margin: 0;
+      span {
+        font-family: $proxima-font-black;
+      }
+    }
+    &--wrapper {
+      position: relative;
+      .course-icon {
+        position: absolute;
+        top: 0;
+        right: -0.5%;
+        @media (max-width: 991px) {
+          right: 0;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .slider {
+    &-icon {
+      position: absolute;
+      top: -1.2%;
+      right: 2%;
+    }
+  }
+}
+
+.slide {
+  padding-top: 123px;
+  max-width: 534px;
+  &-title {
+    font-size: 2.75rem;
+    font-family: "ProximaNova-Black";
+    line-height: 158.34%;
+    color: #fff7df;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+  &-text {
+    font-size: 1.125rem;
+    color: #fff7df;
+    line-height: 33px;
+    font-family: "ProximaNova";
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+}
+.hero-slider-arrows {
+  height: 45px;
+  margin-top: 52px;
+  display: flex;
+  max-width: 534px;
+  .hero-slider-arrow {
+    border-radius: 50px;
+    background-color: #fff7df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    &:nth-child(2) {
+      margin-left: 15px;
+    }
+    &:nth-child(2) {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    svg {
+      transition: all 0.2s ease-in-out;
+      stroke: linear-gradient(258.11deg, #ffc000 1.55%, #ff8a00 95.8%);
+      path {
+        fill: linear-gradient(258.11deg, #ffc000 1.55%, #ff8a00 95.8%);
+        stroke: linear-gradient(258.11deg, #ffc000 1.55%, #ff8a00 95.8%);
+      }
+    }
+    &:hover {
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+      svg {
+        stroke: #fff;
+        path {
+          fill: #fff;
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}
+
+.hero-wrapper {
+  padding-bottom: 116px;
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-slider {
+    text-align: center;
+  }
+  .hero-slider-arrows {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 52px;
+  }
+}

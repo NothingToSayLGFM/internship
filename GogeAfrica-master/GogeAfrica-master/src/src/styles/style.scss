@@ -1,0 +1,28 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+@import "base/fonts";
+@import "base/variable";
+@import "base/global";
+@import "base/buttons";
+@import "base/skeleton";
+
+@import "components/hero";
+@import "components/portfolio";
+@import "components/cocktails";
+@import "components/count";
+@import "components/testimonials";
+@import "components/price";
+@import "components/talk";
+@import "components/search";
+@import "components/course-card";
+
+@import "objects/remove-modal";
+@import "objects/payment-modal";
+@import "objects/check-modal";
+@import "objects/delivery-page";
+@import "objects/header";
+@import "objects/footer";
+@import "objects/cart-page";
+
+@import "node_modules/slick-carousel/slick/slick.scss";

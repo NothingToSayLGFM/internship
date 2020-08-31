@@ -1,0 +1,89 @@
+<template>
+  <b-col lg="4" md="6" sm="12" class="cocktails--card course-cocktails" v-if="cocktail">
+    <div>
+      <b-card :img-src="cocktail.strDrinkThumb" img-alt="Image" img-top tag="article" class="mb-2">
+        <b-card-text>{{cocktail.strDrink}}</b-card-text>
+        <b-button class="cocktails-cart" @click="addToCart(cocktail)">
+          <svg
+            width="22"
+            height="19"
+            viewBox="0 0 22 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.0459 3.8833H20.4619L16.8579 11.8121H7.48749L6.0459 3.8833Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.48868 11.812H6.26333C5.68669 11.812 5.18213 12.3166 5.18213 12.8932C5.18213 13.4698 5.68669 13.9744 6.26333 13.9744H19.7422"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2.4416 3.88307C3.23777 3.88307 3.88319 3.23764 3.88319 2.44147C3.88319 1.6453 3.23777 0.999878 2.4416 0.999878C1.64542 0.999878 1 1.6453 1 2.44147C1 3.23764 1.64542 3.88307 2.4416 3.88307Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5.32538 17.5785C6.12156 17.5785 6.76698 16.9331 6.76698 16.1369C6.76698 15.3407 6.12156 14.6953 5.32538 14.6953C4.52921 14.6953 3.88379 15.3407 3.88379 16.1369C3.88379 16.9331 4.52921 17.5785 5.32538 17.5785Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.299 17.5785C19.0952 17.5785 19.7406 16.9331 19.7406 16.1369C19.7406 15.3407 19.0952 14.6953 18.299 14.6953C17.5028 14.6953 16.8574 15.3407 16.8574 16.1369C16.8574 16.9331 17.5028 17.5785 18.299 17.5785Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3.88379 2.44189C5.32538 2.44189 6.04618 2.94645 6.04618 3.88349"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6.76562 6.76672H19.0192"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </b-button>
+        <p class="coctails--offer">Premium</p>
+      </b-card>
+    </div>
+  </b-col>
+  <b-col lg="4" md="6" sm="12" class="cocktails--card course-cocktails" v-else>
+    <div class="box-skeleton">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+  </b-col>
+</template>
+
+<script>
+export default {
+  name: "CardCourse",
+  props: {
+    cocktail: Object
+  },
+  methods: {
+    addToCart(cocktail) {
+      this.$store.dispatch("setCartItem", cocktail);
+    }
+  }
+};
+</script>

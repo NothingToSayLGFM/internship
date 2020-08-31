@@ -1,0 +1,124 @@
+.features {
+  &__text {
+    margin: 0 auto;
+    max-width: 584px;
+    text-align: center;
+    padding-top: 116px;
+    p {
+      font-size: 1.125rem;
+      line-height: 160%;
+      font-weight: 500;
+    }
+    h2 {
+      margin-bottom: 49px;
+    }
+  }
+  &__boxes {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    display: flex;
+    @media screen and (max-width: 1024px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__box {
+    display: flex;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-right: 50px;
+    padding-bottom: 33px;
+    min-height: 358px;
+    width: calc(50% - 60px);
+    margin: 0 30px;
+    margin-bottom: 50px;
+    position: relative;
+    &:nth-child(1) {
+      background-image: url("/assets/img/box-blue1.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(2) {
+      background-image: url("/assets/img/box-pink.png");
+      background-position: right bottom;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(3) {
+      background-image: url("/assets/img/box-pink2.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(4) {
+      background-image: url("/assets/img/box-pink3.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 1024px) {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 50px;
+      background: none;
+      width: 100%;
+      &:nth-child(n) {
+        background: none;
+      }
+    }
+    h3 {
+      font-size: 1.5rem;
+      line-height: 130%;
+      margin-top: 0;
+      padding: 0;
+      margin-bottom: 32px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 160%;
+      margin-top: 0;
+      margin-bottom: 32px;
+      padding: 0;
+    }
+    &--image {
+      width: 50%;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-left: -34px;
+        margin-top: 15px;
+      }
+    }
+    &--text {
+      width: 50%;
+
+      margin: 0 auto;
+      a {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 33px;
+        span {
+          padding-right: 20px;
+          color: #212353;
+        }
+        &:hover {
+          span {
+            color: #4b5d68;
+          }
+        }
+        @media screen and (max-width: 1024px) {
+          justify-content: center;
+          position: unset;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+}

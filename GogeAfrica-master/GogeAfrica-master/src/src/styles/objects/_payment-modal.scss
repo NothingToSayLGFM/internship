@@ -1,0 +1,331 @@
+.payment-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1040;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  button[disabled="disabled"],
+  button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+
+  iframe {
+    /* This fixes a mobile Safari bug */
+    height: 38px !important;
+  }
+
+  #payment-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    font-family: $proxima-font-black;
+  }
+
+  .date-and-code {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .date-and-code > div:nth-child(1) {
+    width: 55.715%;
+  }
+  .date-and-code > div:nth-child(2) {
+    width: 45.719%;
+  }
+
+  .input-container {
+    position: relative;
+    display: flex;
+    height: 40px;
+  }
+  .icon-container:last-child {
+    right: 0;
+  }
+  .icon-container.payment-method {
+    right: 0;
+  }
+
+  .input-container.card-number {
+    margin-bottom: 8px;
+  }
+  .input-container.expiry-date {
+    margin-right: 4px;
+  }
+  .input-container.cvv {
+    margin-left: 4px;
+  }
+
+  .card-number-frame {
+    padding-left: 0px;
+    position: relative;
+    &::before {
+      content: "";
+      height: 2px;
+      position: absolute;
+      border-bottom: 2px solid #fff;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .expiry-date-frame {
+    padding-left: 0px;
+    &::before {
+      content: "";
+      height: 2px;
+      position: absolute;
+      border-bottom: 2px solid #fff;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .cvv-frame {
+    padding-left: 0px;
+    &::before {
+      content: "";
+      height: 2px;
+      position: absolute;
+      border-bottom: 2px solid #fff;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  div + button {
+    margin-top: 8px;
+  }
+
+  .icon-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 26px;
+    margin: 0 7px;
+  }
+
+  .icon-container.payment-method {
+    transform: translateY(-50%) rotateY(90deg);
+    transition: opacity 0.15s ease-out;
+    opacity: 0;
+    top: 50%;
+  }
+
+  .icon-container.payment-method.show {
+    opacity: 1;
+    transition: all 0.4s ease-out;
+    transform: translateY(-50%) rotateY(0deg);
+  }
+
+  .icon-container.payment-method img {
+    width: 100%;
+  }
+
+  [id$="-error"] {
+    display: none;
+  }
+
+  .frame {
+    opacity: 0;
+  }
+
+  .frame--activated {
+    opacity: 1;
+  }
+
+  .frame--activated.frame--focus {
+  }
+
+  .frame--activated.frame--invalid {
+    &::before {
+      content: "";
+      height: 2px;
+      position: absolute;
+      border-bottom: 2px solid red;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .error-message {
+    display: block;
+    color: #c9501c;
+    font-size: 0.9rem;
+    margin: 8px 0 0 1px;
+    font-weight: 300;
+  }
+
+  #pay-button {
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top: 45px;
+    background-color: #4baa94;
+    font-family: $proxima-font-bold;
+    line-height: 24px;
+    font-size: 1.25rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  #pay-button:active {
+    background-color: #0b2a49;
+    box-shadow: 0 1px 3px 0 rgba(19, 57, 94, 0.4);
+  }
+
+  #pay-button:hover {
+    background-color: #15406b;
+    box-shadow: 0 2px 5px 0 rgba(19, 57, 94, 0.4);
+  }
+
+  #pay-button:disabled {
+    background-color: #697887;
+    box-shadow: none;
+  }
+
+  #pay-button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  .success-payment-message {
+    color: #13395e;
+    line-height: 1.4;
+  }
+  .token {
+    color: #b35e14;
+    font-size: 0.9rem;
+    font-family: monospace;
+  }
+
+  /**
+  IE11-targeted optimisations
+   */
+  _:-ms-fullscreen,
+  :root .icon-container {
+    display: block;
+  }
+
+  _:-ms-fullscreen,
+  :root .icon-container img {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    position: absolute;
+  }
+
+  _:-ms-fullscreen,
+  #icon-card-number,
+  _:-ms-fullscreen,
+  #icon-expiry-date,
+  _:-ms-fullscreen,
+  #icon-cvv {
+    left: 7px;
+  }
+
+  #checkout-frames-card-number::-ms-clear {
+    display: none;
+  }
+}
+
+.payment-modal__body {
+  position: relative;
+  .byu-btn {
+    padding-left: 10px;
+  }
+  padding-bottom: 36px;
+  .form-container {
+    .inp-bg {
+      padding-right: 36px;
+      padding-left: 36px;
+      padding-bottom: 36px;
+      padding-top: 55px;
+      border-radius: 10px;
+      background-image: url("../assets/img/Card.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .form-wrap {
+    margin-top: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1040;
+  top: 20%;
+  width: 519px;
+  left: 50%;
+  transform: translate(-50%);
+  &--title {
+    .title-close {
+      cursor: pointer;
+      position: absolute;
+      top: -28px;
+      right: 6px;
+    }
+    position: relative;
+    margin-top: 25px;
+    color: #727272;
+    font-size: 1.25rem;
+    line-height: 24px;
+    font-family: $proxima-font-regular;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e2;
+    h4 {
+      margin-bottom: 25px;
+    }
+  }
+  .card-frame {
+    margin-top: 30px;
+    width: 448px;
+    background-image: url("../assets/img/Card.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.payment-modal__form--button {
+  background-color: #4baa94;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 45px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 1.25rem;
+  font-family: $proxima-font-bold;
+  line-height: 24px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 237px;
+  span {
+    &:nth-child(1) {
+      padding-left: 17px;
+    }
+    &:nth-child(2) {
+      padding-left: 8px;
+    }
+  }
+  &:hover {
+    background-color: #1f866e;
+  }
+}

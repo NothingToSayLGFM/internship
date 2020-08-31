@@ -1,0 +1,110 @@
+header {
+  padding-top: 45px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  &__brand {
+    div {
+      margin: 16px 40px 16px 40px;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 75px;
+    &--item {
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      margin-left: 45px;
+      a {
+        font-size: 1rem;
+        text-transform: capitalize;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+    .active {
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+  &__button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    button {
+      margin-right: 30px;
+      margin-left: auto;
+    }
+  }
+  .icon {
+    display: none;
+    border: none;
+    background-color: none;
+    background: transparent;
+    i {
+      font-size: 2rem;
+      color: #f063b8;
+    }
+  }
+}
+
+.responsive-navbar {
+  padding-left: 40px;
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  .responsive-navbar {
+    .navbar__menu--item {
+      margin-left: 0;
+    }
+  }
+  .navbar {
+    &__menu {
+      display: none;
+    }
+  }
+  .navbar {
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .responsive {
+    position: relative;
+  }
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .responsive {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar__button {
+    button {
+      span {
+        padding: 0;
+      }
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 0.6rem;
+      svg {
+        display: none;
+      }
+    }
+  }
+}

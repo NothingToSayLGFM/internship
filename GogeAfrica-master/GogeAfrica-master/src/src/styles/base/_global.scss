@@ -1,0 +1,36 @@
+body {
+  position: relative;
+  #controllerFrame {
+    display: none !important;
+  }
+}
+body.hidden {
+  overflow: hidden;
+}
+.header-container {
+  @media screen and (min-width: 1500px) {
+    max-width: 1386px !important;
+  }
+}
+
+button[disabled="disabled"],
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+a[disabled="disabled"],
+a:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.button {
+  font-family: $roboto-font-regular;
+}

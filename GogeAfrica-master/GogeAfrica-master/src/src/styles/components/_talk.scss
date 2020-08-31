@@ -1,0 +1,88 @@
+.talk {
+  background-image: url("../assets/img/fon.png");
+  background-repeat: no-repeat;
+  padding-bottom: 64px;
+  background-position: center 0;
+  position: relative;
+  overflow: hidden;
+  &__text {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 437px;
+    div {
+      margin-right: 35px;
+    }
+    h2 {
+      font-family: $proxima-font-black;
+      font-size: 2.5rem;
+      background: linear-gradient(232.11deg, #ffc000 1.55%, #ff8a00 95.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 158.34%;
+      max-width: 301px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 0.875rem;
+      line-height: 175.78%;
+      color: #5c5c5c;
+      font-family: $proxima-font-regular;
+      max-width: 446px;
+      margin-bottom: 33px;
+    }
+    @media (max-width: 992px) {
+      justify-content: center;
+      h2 {
+        max-width: 100%;
+      }
+      p {
+        max-width: 100%;
+      }
+      div {
+        margin-right: 0;
+        text-align: center;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+  & > .left-image.left-image-real {
+    top: 36%;
+    max-width: 100%;
+    height: auto;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 1387px) {
+      top: 33%;
+      max-width: 41%;
+    }
+    @media (max-width: 1200px) {
+      top: 46.5%;
+      max-width: 41%;
+    }
+  }
+  .left-image {
+    position: absolute;
+    left: 0;
+    top: 26%;
+    max-width: 100%;
+    height: auto;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 1387px) {
+      max-width: 45%;
+    }
+    @media (max-width: 1200px) {
+      top: 40%;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+}
